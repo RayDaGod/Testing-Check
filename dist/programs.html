@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/9450bfaa8d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>InitiateFIT | Programs</title>
+  </head>
+
+  <body id="programs-html">
+    <div id="header">
+      <nav id="navbar">
+        <h1 id="logo">
+          <a href="index.html">InitiateFIT</a>
+        </h1>
+        <ul class="links">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a class="active program-link" href="programs.html">Programs</a>
+          </li>
+          <li>
+            <a href="calc.html">Calculator</a>
+          </li>
+        </ul>
+        <ul id="socials">
+          <li>
+            <a class="nav" href="#"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li>
+            <a class="nav" href="#"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <section class="programs-html">
+      <div class="cont">
+        <div class="program-text">
+          <h1 id="heading-program">Programs</h1>
+        </div>
+        <div id="program-list">
+          <div class="all-programs">
+            <ul id="prg">
+              <li class="selected">All</li>
+              <li>Beginner</li>
+              <li>Intermediate</li>
+              <li>Advanced</li>
+              <li>Bodybuilding</li>
+              <li>Powerbuilding</li>
+              <li>Powerlifting</li>
+            </ul>
+          </div>
+          <div id="programs">
+            <ul id="all-programs-cards">
+              <li class="program-cards all beginner powerbuilding">
+                <img src="/dist/img/prg5.jpg" alt="" />
+                <h5 class="color-card bg-primary">Beginner</h5>
+                <div class="info">
+                  <h1>2 Day Routine</h1>
+                  <h1>Powerbuilding</h1>
+                  <h5>2 Day Split</h5>
+                  <a class="program" href="prg-2day.html"> Get Program</a>
+                  <button class="view" onclick="program(1)">View</button>
+                </div>
+              </li>
+              <li class="program-cards all beginner powerlifting">
+                <img src="/dist/img/prg6.jpg" alt="" />
+                <h5 class="color-card bg-primary">Beginner</h5>
+                <div class="info">
+                  <h1>5x5 Method</h1>
+                  <h1>Powerlifting</h1>
+                  <h5>3 Day Split</h5>
+                  <a class="program" href="prg-5x5.html">Get Program</a>
+                  <button class="view" onclick="program(2)">View</button>
+                </div>
+              </li>
+              <li class="program-cards all beginner powerlifting">
+                <img src="/dist/img/prg6.jpg" alt="" />
+                <h5 class="color-card bg-primary">Beginner</h5>
+                <div class="info">
+                  <h1>Texas Method</h1>
+                  <h1>Powerlifting</h1>
+                  <h5>3 Day Split</h5>
+                  <a class="program" href="prg-texas.html">Get Program</a>
+                  <button class="view" onclick="program(5)">View</button>
+                </div>
+              </li>
+              <li class="program-cards all beginner powerbuilding">
+                <img src="/dist/img/prg5.jpg" alt="" />
+                <h5 class="color-card bg-primary">Beginner</h5>
+                <div class="info">
+                  <h1>GreySkull LP</h1>
+                  <h1>Powerbuilding</h1>
+                  <h5>3 Day Split</h5>
+                  <a class="program" href="prg-greyskull.html">Get Program</a>
+                  <button class="view" onclick="program(6)">View</button>
+                </div>
+              </li>
+              <li class="program-cards all beginner powerbuilding">
+                <img src="/dist/img/prg5.jpg" alt="" />
+                <h5 class="color-card bg-primary">Beginner</h5>
+                <div class="info">
+                  <h1>Upper/Lower</h1>
+                  <h1>Powerbuilding</h1>
+                  <h5>4 Day Split</h5>
+                  <a class="program" href="prg-uplow.html">Get Program</a>
+                  <button class="view" onclick="program(3)">View</button>
+                </div>
+              </li>
+              <li class="program-cards all beginner bodybuilding">
+                <img src="/dist/img/prg4.jpg" alt="" />
+                <h5 class="color-card bg-primary">Beginner</h5>
+                <div class="info">
+                  <h1>Bro Split</h1>
+                  <h1>Bodybuilding</h1>
+                  <h5>5 Day Split</h5>
+                  <a class="program" href="prg-brosplit.html">Get Program</a>
+                  <button class="view" onclick="program(4)">View</button>
+                </div>
+              </li>
+              <li class="program-cards all intermediate powerbuilding">
+                <img src="/dist/img/prg2.jpg" alt="" />
+                <h5 class="color-card bg-success">Intermediate</h5>
+                <div class="info">
+                  <h1>PHUL Method</h1>
+                  <h1>Powerbuilding</h1>
+                  <h5>4 Day Split</h5>
+                  <a class="program" href="prg-phul.html">Get Program</a>
+                  <button class="view" onclick="program(7)">View</button>
+                </div>
+              </li>
+              <li class="program-cards all intermediate powerbuilding">
+                <img src="/dist/img/prg2.jpg" alt="" />
+                <h5 class="color-card bg-success">Intermediate</h5>
+                <div class="info">
+                  <h1>5/3/1 Method</h1>
+                  <h1>Powerbuilding</h1>
+                  <h5>4 Day Split</h5>
+                  <a class="program" href="prg-531.html">Get Program</a>
+                  <button class="view" onclick="program(8)">View</button>
+                </div>
+              </li>
+              <li class="program-cards all intermediate powerbuilding">
+                <img src="/dist/img/prg2.jpg" alt="" />
+                <h5 class="color-card bg-success">Intermediate</h5>
+                <div class="info">
+                  <h2>PPL Upper/Lower</h2>
+                  <h1>Powerbuilding</h1>
+                  <h5>5 Day Split</h5>
+                  <a class="program" href="prg-pplUL.html">Get Program</a>
+                  <button class="view" onclick="program(9)">View</button>
+                </div>
+              </li>
+              <li class="program-cards all intermediate bodybuilding">
+                <img src="/dist/img/prg3.jpg" alt="" />
+                <h5 class="color-card bg-success">Intermediate</h5>
+                <div class="info">
+                  <h1>PPLx2</h1>
+                  <h1>Bodybuidling</h1>
+                  <h5>6 Day Split</h5>
+                  <a class="program" href="prg.pplx2.html">Get Program</a>
+                  <button class="view" onclick="program(12)">View</button>
+                </div>
+              </li>
+              <li class="program-cards all advanced bodybuilding">
+                <img src="/dist/img/arnold2.jpg" alt="" />
+                <h5 class="color-card bg-danger">Advanced</h5>
+                <div class="info">
+                  <h1>Arnold Split</h1>
+                  <h1>Bodybuilding</h1>
+                  <h5>6 Day Split</h5>
+                  <a class="program" href="prg-arnold.html">Get Program</a>
+                  <button class="view" onclick="program(11)">View</button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="table-programs"></div>
+    <div id="overlay" class="overlay hidden"></div>
+
+    <footer id="footer">
+      <div class="newsletter">
+        <div class="news-text">
+          <h1>Connect With Me</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
+            nemo.
+          </p>
+        </div>
+        <form action="process.php">
+          <input type="text" id="email" placeholder="Enter Email" />
+          <a href="#">Sign Up</a>
+        </form>
+      </div>
+      <div class="end-footer">
+        <div class="sc">
+          <div class="s">
+            <h1>Support</h1>
+            <p><a href="#">Terms and Conditions</a></p>
+            <p><a href="#">Private Policy</a></p>
+            <p><a href="#">FAQs</a></p>
+          </div>
+          <div class="c">
+            <h1>Contact</h1>
+            <p>healmon22@gmail.com</p>
+            <p>1+(000)-000-0000</p>
+          </div>
+        </div>
+        <h1 class="logo">InitiateFIT</h1>
+      </div>
+      <p class="copyright">Copyright &copy; 2023, All Rights Reserved</p>
+    </footer>
+
+    <script src="/dist/js/programs.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

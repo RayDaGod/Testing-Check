@@ -1,0 +1,146 @@
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.sticky {
+  background: white;
+  border-bottom: 1px solid gray;
+  transition: 0.5s ease-in-out;
+  a {
+    color: black;
+    transition: 0.8s ease-in-out;
+  }
+}
+
+.hidden {
+  display: none !important;
+}
+
+.active {
+  border-bottom: 1px solid white;
+  &.active-color {
+    border-bottom: 1px solid black;
+  }
+}
+
+#contact-btn {
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  bottom: 0;
+  margin: 2% 1%;
+  a {
+    font-size: 1rem;
+    color: black;
+    background: white;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 50px;
+  }
+}
+
+#programs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+  .program-cards {
+    width: 300px;
+    height: 500px;
+    padding: 2rem 1rem;
+    position: relative;
+    display: flex;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+    transition: 0.5s ease-in-out;
+    background-color: black;
+    .color-card {
+      position: absolute;
+      z-index: 2;
+      color: white;
+      padding: 3px;
+      border-radius: 2px;
+    }
+    .info-home {
+      padding-top: 40%;
+      text-align: center;
+      z-index: 2;
+      opacity: 1;
+      color: white;
+      .program-home {
+        font-size: 2.5rem;
+      }
+      a {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 20px;
+        color: black;
+        border-radius: 2px;
+        background: white;
+        &:hover {
+          background: darkgray;
+          transition: 0.2s ease-in-out;
+        }
+      }
+    }
+    .info {
+      position: absolute;
+      z-index: 2;
+      opacity: 1;
+      transform: translateY(0px);
+      color: white;
+      align-self: flex-end;
+    }
+    &:hover {
+      transform: translateY(20px);
+      &:before {
+        opacity: 0.3;
+      }
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, blue, lightblue);
+      z-index: 2;
+      transition: 0.5s all;
+      opacity: 0;
+    }
+    img {
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0.7;
+    }
+    .program {
+      display: inline-block;
+      padding: 10px;
+      background: white;
+      border: none;
+      border-radius: 2px;
+      color: black;
+      &:hover {
+        background: darkgray;
+        transition: 0.2s ease-in-out;
+      }
+    }
+    .view {
+      background: none;
+      text-decoration: underline;
+      z-index: 2;
+      color: gray;
+      border: none;
+      padding: 3px;
+      border-radius: 2px;
+    }
+  }
+}

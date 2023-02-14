@@ -1,0 +1,30 @@
+#about-html {
+  #about-bg {
+    background: rgba(0, 0, 0, 0.5)
+      url("/dist/img/pexels-tima-miroshnichenko-5327534.jpg") no-repeat center
+      center/cover;
+    background-blend-mode: darken;
+    height: 50vh;
+    .about-heading {
+      color: white;
+      padding: 200px 10%;
+      font-size: 3rem;
+    }
+  }
+
+  #about-us {
+    margin: 0 10% 5%;
+    .about-heading {
+      margin: 50px 0;
+      font-size: 3rem;
+    }
+    #about-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 5rem;
+      .about {
+        line-height: 2;
+      }
+    }
+  }
+}

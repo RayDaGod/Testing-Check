@@ -1,0 +1,153 @@
+#calc-html {
+  font-family: "Kanit", sans-serif;
+
+  .active {
+    border-bottom: 1px solid black;
+    transition: 0.2s ease-in-out;
+  }
+  #header {
+    width: 100%;
+    #navbar {
+      margin: 0 10%;
+      display: flex;
+      justify-content: space-between;
+      padding: 25px 0;
+      font-size: 20px;
+      a {
+        color: black;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+      .links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .nav-btn {
+          background: black;
+          color: white;
+          border-radius: 2px;
+          padding: 15px 25px;
+          &:hover {
+            background: lightgray;
+            transition: 0.2s ease-in-out;
+          }
+        }
+
+        li {
+          padding: 0 20px;
+        }
+      }
+    }
+    &.navbarLinks {
+      a {
+        color: black;
+      }
+    }
+    #socials {
+      display: flex;
+      li {
+        padding: 10px;
+      }
+    }
+  }
+
+  .calc-html {
+    margin: 50px 10%;
+    .cont {
+      .calc-text {
+        padding-bottom: 80px;
+        border-bottom: 1px solid gray;
+        h1 {
+          font-size: 3rem;
+        }
+      }
+      #strength-form {
+        label {
+          font-size: 1.2rem;
+        }
+        select {
+          font-size: 1.2rem;
+        }
+        input {
+          font-size: 1.2rem;
+        }
+        span {
+          font-size: 1.2rem;
+        }
+      }
+      #strength-results {
+        label {
+          font-size: 1.2rem;
+        }
+        select {
+          font-size: 1.2rem;
+        }
+        input {
+          font-size: 1.2rem;
+        }
+        span {
+          font-size: 1.2rem;
+        }
+      }
+    }
+    #program-list {
+      display: flex;
+      margin-top: 5%;
+
+      .all-programs {
+        margin-right: 10%;
+        li {
+          margin-top: 20px;
+          font-size: 17px;
+          color: gray;
+          &.bold {
+            font-weight: bold;
+            color: black;
+          }
+          &:hover {
+            cursor: pointer;
+            color: gray;
+            transition: 0.2s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+
+  #contact {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 100px;
+    h1 {
+      font-size: 3rem;
+    }
+    #contact-info {
+      width: 45%;
+      .info {
+        margin-bottom: 100px;
+        h1 {
+          padding: 20px 0;
+        }
+        &:last-child {
+          border-top: 1px solid gray;
+        }
+        ul {
+          padding-left: 0;
+          display: flex;
+          .contact-socials {
+            color: black;
+            padding-right: 5px;
+          }
+        }
+      }
+    }
+    #contact-me {
+      width: 45%;
+    }
+  }
+}

@@ -1,0 +1,71 @@
+#get-prg {
+  #about-bg {
+    // background: rgba(0, 0, 0, 0.5) url("/dist/img/prg6.jpg") no-repeat center
+    //   center/cover;
+    // background-blend-mode: darken;
+
+    height: 50vh;
+    img {
+      position: relative;
+      z-index: -1;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      filter: brightness(50%);
+    }
+    .about-heading {
+      color: white;
+      text-align: center;
+      padding-top: 200px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      h1 {
+        font-size: 6rem;
+        line-height: 1;
+      }
+      h2 {
+        font-size: 3rem;
+      }
+      p {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  #about-us {
+    margin: 5% 15%;
+    #about-program {
+      img {
+        margin-top: 1%;
+        width: 100%;
+      }
+      h1 {
+        margin-top: 5%;
+        font-size: 3rem;
+      }
+      h2 {
+        font-size: 2rem;
+        margin-top: 2%;
+      }
+      p {
+        margin-top: 1%;
+        font-size: 1.5rem;
+        line-height: 2;
+        color: #212529;
+      }
+      a {
+        color: blue;
+      }
+      .bolded {
+        font-weight: bold;
+      }
+      .keys {
+        font-size: 1.3rem;
+        margin-left: 5%;
+      }
+    }
+  }
+}
